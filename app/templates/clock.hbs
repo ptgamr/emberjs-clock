@@ -1,0 +1,6 @@
+<h2>Local Time: <strong>{{localTime}}</strong></h2>
+
+<div>{{ view Ember.Select content=model selection=selectedTimezone
+   optionValuePath='content.offset' optionLabelPath='content.name'}}</div>
+
+<h2>Future: {{timeByTimezone}}</h2>
